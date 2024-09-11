@@ -1,0 +1,47 @@
+body {
+  background-size: cover;
+  height: 100vh;
+  border: border-box;
+}
+.jumbotron,
+.card {
+  background-color: rgba(255, 255, 255, 0.85);
+}
+.jumbotron .container {
+  height: 70vh;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  @include responsive(tablet-portrait) {
+    height: 80vh;
+  }
+  @include responsive(phone) {
+    height: 90vh;
+  }
+  h1 {
+    @include responsive(tablet-portrait) {
+      font-size: 3rem;
+    }
+    @include responsive(phone) {
+      font-size: 3rem;
+    }
+  }
+  p {
+    @include responsive(tablet-portrait) {
+      font-size: 1.5rem;
+    }
+    @include responsive(phone) {
+      font-size: 1.5rem;
+    }
+  }
+}
+.container__github {
+  height: 70vh;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
